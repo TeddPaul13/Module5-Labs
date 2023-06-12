@@ -12,12 +12,12 @@ app1.get("/", (req, res) => {
   res.send("Hello! Welcome to the first server");
 });
 
-app2.get("/", (req, res) => {
-  res.send("Hello! Welcome to the Second server");
+app2.get("/", (req, res) => { 
+  res.send("Hello! Welcome to the SECOND server");
 });
 
 app3.get("/", (req, res) => {
-  res.send("Hello! Welcome to the Third server");
+  res.send("Hello! Welcome to the THIRD server");
 });
 
 app1.listen(port1, () => {
