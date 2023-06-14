@@ -4,9 +4,10 @@ const cors = require("cors");
 
 const port = 4000;
 
-const add = require ('../Exercise5/routes/add.js');
+const calculateRoute = require ('../Exercise5/routes/calculateRoute.js');
 
-app.use('/calc', add);
+app.use(cors())
+app.use('/calc', calculateRoute);
 
 app.get("/", (req, res) => {
   res.send("Hello! Welcome to Exercise 5");
@@ -14,7 +15,7 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => {
     console.log(`Example app
-  listening at
+  listening at2
   http://localhost:${port}`);
   });
   
